@@ -1,9 +1,9 @@
 services:
 - docker
 script:
-- docker build -t wtanaka/alpine-uid-gcloud .
+- docker build -t cliwrap/gcloud .
 # Make sure the container works normally
-- docker run --rm wtanaka/alpine-uid-gcloud /google-cloud-sdk/bin/gcloud --version 2>&1
+- docker run --rm cliwrap/gcloud /google-cloud-sdk/bin/gcloud --version 2>&1
 after_success:
 - >
   curl -H "Content-Type: application/json"

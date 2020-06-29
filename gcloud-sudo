@@ -6,4 +6,4 @@ docker run \
   -v "`pwd`:/work" \
   -v "$HOME:/home/hostuser" \
   cliwrap/gcloud \
-  /google-cloud-sdk/bin/gcloud "$@"
+  gosu /google-cloud-sdk/bin/gcloud "$@"
