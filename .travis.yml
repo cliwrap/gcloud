@@ -9,7 +9,7 @@ after_success:
   curl -H "Content-Type: application/json"
   --data '{"source_type": "Branch", "source_name": "master"}'
   -X POST
-  https://registry.hub.docker.com/u/wtanaka/alpine-uid-gcloud/trigger/a7650f7f-d522-4b9c-8b9f-caf7feb8a4ea/
+  https://hub.docker.com/api/build/v1/source/d4fda127-eefa-47a2-9a9a-827a820da866/trigger/67b26f64-377f-46ad-8505-0eed1b6cc514/call/
 notifications:
   email:
     recipients:
